@@ -8,4 +8,5 @@ args = parser.parse_args()
 config_file = open(args.config_file)
 
 for line in config_file.readlines():
+    run(line, shell=True, check=True)
     print(line)
